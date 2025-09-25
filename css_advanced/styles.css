@@ -1,10 +1,11 @@
 body {
-  margin: 0;   /* removes browser’s default margin */
-  padding: 0;
+  margin: 0;   
+  box-sizing: border-box;
+  overflow-x: hidden; 
 }
 
 @font-face {
-    font-family: 'Source Sans Pro'
+    font-family: 'Source Sans Pro';
     src: url("./fonts/SourceSansPro-It.otf") format('opentype');
     font-weight: normal;
     font-style: normal;
@@ -123,7 +124,7 @@ header {
  display: flex; 
  flex-wrap: wrap;
  jusify-content: center;
- gap: 10px
+ gap: 10px;
 }
 
 .cta-button {
@@ -137,6 +138,7 @@ header {
     border-radius: 25px;
     font-weight: bold;
     cursor: pointer;
+    flex-wrap: wrap;
 }
 
 .main-part p {
@@ -162,7 +164,7 @@ margin-top: 50px;
 
 .pros-container {
   display: flex;
-  flex-warp: wrap;
+  flex-wrap: wrap;
   justify-content: center;   /* center all items */
   align-items: flex-start;   /* align to the top */
   gap: 50px;                 /* space between each card */
@@ -215,7 +217,7 @@ margin-top: 50px;
  .purple-text{
     color: white;
     font-weight: 400;
-   //ine-height: 33.6px;
+
     font-family: 'Source Sans Pro';
  }
 
@@ -227,4 +229,78 @@ margin-top: 50px;
  .purple-text h3{
     margin: 0;
  }
+
+
+.tutorials-container{
+  background: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 20px;
+  max-width: 100%;
+  overflow-x: hidden;
+  padding: 60px;
+
+}
+
+.tutorials-container img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  
+  
+}
+
+.tutorials-header{
+  text-align: center;
+  padding-top: 50px;
+  font-family: 'Source Sans Pro', sans-serif; 
+  font-weight: 300;
+
+}
+
+.tutorials-header span{
+  color:#C271FF;
+  font-weight: 700;
+  
+}
+
+.video-list p{
+  opacity: 0.5;
+}
+
+.video-list div img {
+    width: 30px;
+    height: 30px;
+    
+}
+
+
+.video-list div h4{
+  color: #C271FF;
+}
+
+.video-list div {
+  display: flex;
+  flex-wrap: wrap;
+  jusify-content: space-evenly;
+  align-items: center;
+  gap: 5px;
+}
+
+
+.video-list div:last-of-type {
+    display: flex;
+    gap: 5px;
+    padding: 10px 20px;
+    color: #C271FF;
+}
+
+.video-list div:nth-of-type(5){
+  opacity: 0.5;
+}
+
+.video-list div:nth-of-type(6){
+  
+}
 
