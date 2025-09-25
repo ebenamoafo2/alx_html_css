@@ -300,7 +300,135 @@ margin-top: 50px;
   opacity: 0.5;
 }
 
-.video-list div:nth-of-type(6){
+.free-membership{
+  
+  height: auto;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+  
   
 }
+
+.free-container{
+background-color:#071629;
+padding: 80px 40px;
+margin: 60px 0;
+}
+
+.free-container h3{
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 80px;
+  font-family: 'Source Sans Pro',Arial; sans-serif;
+}
+
+.free-container span{
+  color:  #C271FF;
+  font-weight: 700;
+  
+}
+
+.free-grid {
+  text-align: center;
+  color: white;
+}
+
+.free-grid img {
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+}
+
+.free-grid p {
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: white;
+    margin: 0;
+    opacity: 0.9;
+}
+
+.cta-button2{
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
+   background: linear-gradient(135deg, #C271FF 0%, #A855F7 100%);
+   border-radius: 50px;
+    margin: 40px auto 0;
+    color: white;
+    padding: 15px 32px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    font-size: 0.875rem;
+    
+}
+
+.faq-header h2{
+  text-align: center;
+  font-weight: 600;
+  font-size: 2.5rem;
+  letter-spacing: -0.02em;
+}
+
+.faq-answer{
+opacity:0.5;
+ display: flex;
+align-items: center;
+justify-content: center;
+line-height: 1.5;  
+letter-spacing: 0.5px; /
+margin: 0 auto;
+}
+
+.faq-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 15px;
+  padding: 50px;
+}
+
+.faq-item: nth-of-type(3) {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.faq-item: nth-of-type(4) {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.footer-container{
+  background: #071629;
+  height: auto;
+  display: flex;
+  align-item: center;
+  justify-content: space-between;
+  padding: 100px;
+  
+  
+
+}
+
+.footer-links{
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+
+
+
 
